@@ -6,6 +6,7 @@ function Card({ meal }) {
       <h3>{meal.strMeal}</h3>
       <p>Catégorie : {meal.strCategory}</p>
       <p>Origine : {meal.strArea}</p>
+      <img src={meal.strMealThumb} alt={meal.strMeal} />
     </li>
   );
 }
