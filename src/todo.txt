@@ -1,0 +1,39 @@
+Mini Projet Front
+Vous devez créer une mini application React permettant d’afficher une liste
+d’éléments (technologies, outils, produits, concours…).
+Exigences minimales (obligatoires)
+1. Utiliser React (Vite)
+2. Avoir un fichier JSON contenant au minimum 5 éléments
+3. Afficher dynamiquement la liste via .map()
+4. Créer au minimum 3 composants :
+App
+Un composant Card
+Un composant supplémentaire (SearchBar, Detail, Navbar…)
+5. Utiliser des props
+6. Utiliser useState
+7. Ajouter au minimum une interaction :
+bouton
+compteur
+recherche
+filtre
+8. Organisation propre du projet (dossier components)
+Bonus
+Barre de recherche fonctionnelle
+Affichage conditionnel
+UI propre (Bootstrap autorisé)
+Mini Projet Front 1
+Gestion d’un état vide (“Aucun résultat”)
+Présentation orale (10 minutes max)
+1 - Démonstration (5 minutes)
+Présenter l’application
+Montrer les fonctionnalités
+Tester l’interaction
+2 - Explication technique (5 minutes)
+Vous devrez expliquer :
+Comment vous avez structuré votre projet
+Pourquoi vous avez séparé vos composants
+Comment fonctionne votre state
+Comment vous récupérez et affichez la data
+Une difficulté rencontrée et comment vous l’avez résolue
+⚠️ Vous devez être capable d’expliquer votre code.
+Mini Projet Front 2
