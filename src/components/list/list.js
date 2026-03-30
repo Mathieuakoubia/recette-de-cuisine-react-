@@ -1,3 +1,8 @@
+// importer la liste 
+// gerer les erreur 
+
+
+
 import { useState, useEffect } from "react";
 import Card from "../Cards/Card";
 import SearchBar from "../SearchBar/SearchBar";
@@ -6,15 +11,15 @@ import './list.css';
 function RecipeList() {
 
     //tout les variables dont on a besoin 
-  const [meals, setMeals] = useState(null);
-  const [error, setError] = useState(null);
-  const [isLoading, setIsloading] = useState(false);
-  const [search, setSearch] = useState("bonjour");
+  const [meals, setMeals] = useState(null); // la liste des repas
+  const [error, setError] = useState(null); // le msg d'erreur 
+  const [isLoading, setIsloading] = useState(false);// le chargement
+  const [search, setSearch] = useState("");
 
   useEffect(() => {
     setIsloading(true);
     fetch("https://www.themealdb.com/api/json/v1/1/search.php?f=a") // requete vers l'api
-      .then((r) => r.json()) // on transforme la response en json 
+      .then((response) => response.json()) // on transforme la response en json 
       .then((data) => { 
         setMeals(data.meals);
         setIsloading(false);

@@ -8,7 +8,7 @@ function SearchBar({ value, onChange }) {
       type="text"
       placeholder="Rechercher une recette..."
       value={value} //props qui fait réference au contenu du champs
-      onChange={(e) => onChange(e.target.value)} //props qui recupere evenement "e" quandon écrit dans la barre de recherche 
+      onChange={(event) => onChange(event.target.value)} //props qui recupere evenement "e" quandon écrit dans la barre de recherche 
     />
   );
 }
