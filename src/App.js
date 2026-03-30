@@ -1,4 +1,4 @@
-import RecipeList from './components/list';
+import RecipeList from './components/list/list';
 
 function App() {
   return (

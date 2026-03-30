@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
-import Card from "./Card";
-import SearchBar from "./SearchBar";
+import Card from "../Cards/Card";
+import SearchBar from "../SearchBar/SearchBar";
 import './list.css';
 
 function RecipeList() {
@@ -9,7 +9,7 @@ function RecipeList() {
   const [meals, setMeals] = useState(null);
   const [error, setError] = useState(null);
   const [isLoading, setIsloading] = useState(false);
-  const [search, setSearch] = useState("");
+  const [search, setSearch] = useState("bonjour");
 
   useEffect(() => {
     setIsloading(true);
@@ -30,8 +30,8 @@ function RecipeList() {
 
 
   // filtrer parmis les repas 
-  const filteredMeals = meals?.filter((meal) =>
-    meal.strMeal.toLowerCase().includes(search.toLowerCase())
+  const filteredMeals = meals?.filter((meal) => 
+    meal.strMeal.toLowerCase().includes(search.toLowerCase()) 
   );
 
   return (
